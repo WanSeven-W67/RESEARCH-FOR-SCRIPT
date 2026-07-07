@@ -18,6 +18,12 @@ end)
 
 
 
+
+
+
+
+
+
 -- Script Path: game:GetService("StarterPlayer").StarterCharacterScripts.JumpCooldown
 -- Took 0s to decompile.
 -- Executor: Delta (1.1.727.1199)
@@ -35,6 +41,10 @@ v_u_2.Jumping:Connect(function(p4)
         v_u_3 = false
     end
 end)
+
+
+
+
 
 
 
@@ -120,22 +130,9 @@ v1.Activated:Connect(function()
 end)
 
 
-game:GetService("Players").LocalPlayer.Backpack["Celurit 2 Meter"].Handle
-
-
-game:GetService("Players").LocalPlayer.PlayerGui.ragdoll.functions.remoteragdoll
-
-
-game:GetService("Players").LocalPlayer.PlayerGui.ragdoll.functions.remoteragdollvelocity
-
-
-game:GetService("CoreGui")["9a785be846b52c249378c4f2425b7be49164a78ae7fbf2b41ef5866946449cec"]["A3r-S/e.Zz4Wh-ZR/607t26F.n0/qF-//odnWz\\\205\159'\204\183{\205\147\205\156\205\147$\204\187OedI\205\159\204\186\205\147\205\1482\204\184\204\183\205\158!\205\152\205\147\205\148\204\186+\204\182\205\158\204\183\205\158 |\205\148\205\158O\204\183"]["K31/s4f0Q3Kd37_5y2-_Z/-/u54_-f]j\204\184\204\186\205\159p\205\148x\205\148\204\184;up\205\159W}G\204\187"].Container.TabContainer.Pages["Automation Page"]["AutoFireRemote Spam Mode"]
 
 
 
-game:GetService("StarterGui").ragdoll.functions.remoteragdoll
-
-game:GetService("StarterGui").ragdoll.functions.remoteragdollvelocity
 
 
 -- Script Path: game:GetService("Players").WanSevenftNasywan.PlayerScripts.Combat.KickClient
@@ -289,11 +286,8 @@ if v_u_4.Character then
 end
 
 
-game:GetService("Players").LocalPlayer.PlayerGui.KickGui.KickBtn
 
-game:GetService("ReplicatedStorage").KickRemotes.KickRequest
 
-game:GetService("ReplicatedStorage").KickRemotes.KickToggle
 
 
 
@@ -426,7 +420,8 @@ end)
 local function v35(p32) -- name: onCharacterAdded
     -- upvalues: (ref) v_u_10, (ref) v_u_11
     v_u_10 = false
-    game:GetService("ContextActionService"):UnbindAction("RagdollGetUp")
+ 
+game:GetService("ContextActionService"):UnbindAction("RagdollGetUp")
     local v33 = p32:WaitForChild("Humanoid"):WaitForChild("Animator")
     local v34 = Instance.new("Animation")
     v34.AnimationId = "rbxassetid://133566007754001"
@@ -438,7 +433,8 @@ v_u_4.CharacterAdded:Connect(v35)
 if v_u_4.Character then
     local v36 = v_u_4.Character
     local _ = false
-    game:GetService("ContextActionService"):UnbindAction("RagdollGetUp")
+
+game:GetService("ContextActionService"):UnbindAction("RagdollGetUp")
     local v37 = v36:WaitForChild("Humanoid"):WaitForChild("Animator")
     local v38 = Instance.new("Animation")
     v38.AnimationId = "rbxassetid://133566007754001"
@@ -446,6 +442,8 @@ if v_u_4.Character then
     v_u_11.Priority = Enum.AnimationPriority.Action
     v_u_11.Looped = false
 end
+
+
 
 
 
@@ -705,8 +703,33 @@ v1.PlayerAdded:Connect(v101)
 
 
 
+
 game:GetService("ReplicatedStorage").WeaponRemotes.DealDamage
 
+
+game:GetService("Players").LocalPlayer.Backpack["Celurit 2 Meter"].Handle
+
+
+game:GetService("Players").LocalPlayer.PlayerGui.ragdoll.functions.remoteragdoll
+
+
+game:GetService("Players").LocalPlayer.PlayerGui.ragdoll.functions.remoteragdollvelocity
+
+
+game:GetService("CoreGui")["9a785be846b52c249378c4f2425b7be49164a78ae7fbf2b41ef5866946449cec"]["A3r-S/e.Zz4Wh-ZR/607t26F.n0/qF-//odnWz\\\205\159'\204\183{\205\147\205\156\205\147$\204\187OedI\205\159\204\186\205\147\205\1482\204\184\204\183\205\158!\205\152\205\147\205\148\204\186+\204\182\205\158\204\183\205\158 |\205\148\205\158O\204\183"]["K31/s4f0Q3Kd37_5y2-_Z/-/u54_-f]j\204\184\204\186\205\159p\205\148x\205\148\204\184;up\205\159W}G\204\187"].Container.TabContainer.Pages["Automation Page"]["AutoFireRemote Spam Mode"]
+
+
+
+game:GetService("StarterGui").ragdoll.functions.remoteragdoll
+
+game:GetService("StarterGui").ragdoll.functions.remoteragdollvelocity
+
+
+game:GetService("Players").LocalPlayer.PlayerGui.KickGui.KickBtn
+
+game:GetService("ReplicatedStorage").KickRemotes.KickRequest
+
+game:GetService("ReplicatedStorage").KickRemotes.KickToggle
 
 
 
